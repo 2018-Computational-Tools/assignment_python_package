@@ -51,6 +51,10 @@
   - make sure to keep `setup.py` up-to-date with the dependencies and other information (for additional information, [here is the documentation for `setuptools`](https://setuptools.readthedocs.io/en/latest/setuptools.html)) (Note that there is a gradual movement in the python community away from `setup.py` and towards a `pyrproject.toml` file with different project dependency managers such as e.g. [**poetry**](https://poetry.eustace.io/) - the final best practice solution is still in flux so we are recommending to stick with `setup.py` for now)
   - make sure to work with git to keep track of your changes and push commits back to GitHub
 
+## Continuous Integration
+
+ - continuous integration (i.e. automatic testing) with every commit is very useful and this repo contains a basic `.travis.yml` file to make this possible
+
 ## Releasing your package
 
 - your users (or you) can install your package directly from GitHub using the following syntax:
