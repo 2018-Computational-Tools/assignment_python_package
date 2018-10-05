@@ -57,7 +57,16 @@
 
 ## Coding Style / Linting
 
- - there are various types of linters available for python, we recommend [black](https://black.readthedocs.io/en/stable/) which is quite opinionated but gets the job done easily and efficiently. To install, run `pip install black`. To use run e.g. `black src` or `black tests`, it will reformat all python files in the respective folders to fit its prescribed coding style.
+ - there are various types of linters available for python, we recommend [black](https://black.readthedocs.io/en/stable/) which is quite opinionated but gets the job done easily and efficiently
+ - to install, run `pip install black`
+ - to use, run e.g. `black src` or `black tests`, it will reformat all python files in the respective folders to fit its prescribed coding style.
+
+## Code test coverage
+
+- to figure out how much of your code base is actually covered with tests, the `coverage` package is a great tool
+- to install, run `pip install coverage`
+- to use, run `coverage run -m pytest --doctest-modules` and then `coverage report` for a summary of the results
+- for a more detailed view, run `coverage report` and launch the created `htmlcov/index.html` file
 
 ## Releasing your package
 
