@@ -55,6 +55,10 @@
 
  - continuous integration (i.e. automatic testing) with every commit is very useful and this repo contains a basic `.travis.yml` file to make this possible
 
+## Coding Style / Linting
+
+ - there are various types of linters available for python, we recommend [black](https://black.readthedocs.io/en/stable/) which is quite opinionated but gets the job done easily and efficiently. To install, run `pip install black`. To use run e.g. `black src` or `black tests`, it will reformat all python files in the respective folders to fit its prescribed coding style.
+
 ## Releasing your package
 
 - your users (or you) can install your package directly from GitHub using the following syntax:
