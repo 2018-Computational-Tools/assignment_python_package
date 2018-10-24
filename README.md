@@ -9,22 +9,22 @@
 
  - go to the command line and navigate to the package (i.e. the folder where the `setup.py` is located)
  - install the package from the command line:
-    ```
-    # activate your environment
-    source activate class # linux/macos
-    activate class # windows
-    # install the package in development mode
+    ```bash
+    ## activate your environment
+    source activate class ## linux/macos
+    activate class ## windows
+    ## install the package in development mode
     pip install -e .
     ```
  - now in any python session within this environment you can import your package functions, e.g.:
-   ```Python
-   from awesome import module
-   module.hello()
-   ```
+    ```python
+    from awesome import module
+    module.hello()
+    ```
  - or call functions listed in the `setup.py` -> `entry_points` directly from the command-line:
-   ```
-   hello
-   ```
+    ```bash
+    hello
+    ```
  - any code changes you make will be automatically reflected in the command-line calls and after each new import of the package in a python session - but don't use the console for testing!
 
 ## Testing the package
@@ -71,27 +71,23 @@
 ## Releasing your package
 
 - your users (or you) can install your package directly from GitHub using the following syntax:
-
-  ```bash
-  pip install git+https://github.com/USER/REPO.git
-  ```
+    ```bash
+    pip install git+https://github.com/USER/REPO.git
+    ```
 
 - for wider distribution it is useful to upload your package to the [Python Package Index (PyPI)](https://pypi.org/) at which point it will become available to your users via regular `pip` install:
-
-  ```bash
-  pip install PGKNAME
-  ```
+    ```bash
+    pip install PGKNAME
+    ```
 
 - if you have already settled on a name for your package (it must be unique on PyPI!), it is worthwhile registering the name with PyPI using the following command from your main package directory (you'll need a PyPI account first and then user your login credentials):
-
-  ```bash
-  python setup.py register
-  ```
+    ```bash
+    python setup.py register
+    ```
 
 - and to actually upload/update your package on PyPI:
-
-  ```bash
-  python setup.py sdist upload
-  ```
+    ```bash
+    python setup.py sdist upload
+    ```
 
  - note that the `sdist` part creates a distribution `.tar.gz` file in your `dist` folder which you could also manually distribute to others (or use to test-install your package although we recommend taking the GitHub route for this)
