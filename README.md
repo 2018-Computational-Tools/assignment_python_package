@@ -1,18 +1,16 @@
-# Python Package Template
+# Python Library Template
 
 ## Clone repository
 
  - clone this repository to your desktop
  - open it in your favorite python code editor (e.g. atom or spyder)
 
-## Using the package
+## Using the library
 
- - go to the command line and navigate to the package (i.e. the folder where the `setup.py` is located)
- - install the package from the command line:
+ - go to the command line and navigate to the repo folder (i.e. the folder where the `setup.py` is located)
+ - install the package from the command:
     ```bash
-    ## activate your environment
-    source activate class ## linux/macos
-    activate class ## windows
+    conda activate class
     ## install the package in development mode
     pip install -e .
     ```
@@ -27,9 +25,9 @@
     ```
  - any code changes you make will be automatically reflected in the command-line calls and after each new import of the package in a python session - but don't use the console for testing!
 
-## Testing the package
+## Testing the library
 
-- rather than testing your package interactively, you should write tests that automatically check your functionality
+- rather than testing your library interactively, you should write tests that automatically check your functionality
 - to run a specific test file, you can call e.g. `pytest tests/test_package.py` from the command line (you may have to `pip install pytest` first) - take a look at the `tests/test_package.py` file to see what it checks
 - to run doctests on a code file you can call e.g. `pytest src/awesome/module.py --doctest-modules`
 - to run all your tests and doctests automatically in **multiple virtual environments** to ensure your package works outside your current workspace and in multiple python versions (e.g. python 2.7 and python 3.6), call `tox` from the command line (you may have to `pip install tox` first)
