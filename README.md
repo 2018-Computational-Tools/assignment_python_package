@@ -31,9 +31,10 @@
 ## Testing the library
 
 - rather than testing your library interactively, you should write tests that automatically check your functionality
-- to run a specific test file, you can call e.g. `pytest tests/test_library.py` from the terminal (you may have to `pip install pytest` first) - take a look at the `tests/test_library.py` file to see what it checks
+- install `pytest` with `conda install -c anaconda pytest`
+- to run a specific test file, you can call e.g. `pytest tests/test_library.py` from the terminal - take a look at the `tests/test_library.py` file to see what it checks
 - to run doctests on a code file you can call e.g. `pytest src/awesome/module.py --doctest-modules`
-- to run all your tests and doctests automatically in **multiple virtual environments** to ensure your library works outside your current workspace and in multiple python versions (e.g. python 2.7 and python 3.7), call `tox` from the command line (you may have to `pip install tox` first)
+- to run all your tests and doctests automatically in **multiple virtual environments** to ensure your library works outside your current workspace and in multiple python versions (e.g. python 2.7 and python 3.7), install `conda install -c conda-forge tox` and call `tox` from the terminal
 - to run all tests for just one specific version, use e.g. `tox -e py37` - take a look at the `tox.ini` to see how it is setup and use `tox -l` to find the list of available testing environments
 
 ## Documenting the library
@@ -60,13 +61,13 @@
 ## Coding Style / Linting
 
  - there are various types of linters available for python, we recommend [black](https://black.readthedocs.io/en/stable/) which is quite opinionated but gets the job done easily and efficiently
- - to install, run `pip install black`
+ - to install, run `conda install -c anaconda black`
  - to use, run e.g. `black src` or `black tests`, it will reformat all python files in the respective folders to fit its prescribed coding style.
 
 ## Code test coverage
 
 - to figure out how much of your code base is actually covered with tests, the `coverage` library is a great tool
-- to install, run `pip install coverage`
+- to install, run `conda install -c anaconda coverage`
 - to use, run `coverage run -m pytest --doctest-modules` and then `coverage report` for a summary of the results
 - for a more detailed view, run `coverage report` and launch the created `htmlcov/index.html` file
 
