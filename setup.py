@@ -9,6 +9,6 @@ setup(
     packages=find_packages(where="src"),
     package_dir={'': 'src'},
     install_requires=['numpy'],
-    entry_points={'console_scripts': ['hello = awesome.module:hello']},
+    entry_points={'console_scripts': ['hello = awesome.module:hello', 'add = awesome.module:add_cmd']},
     zip_safe=False
 )
