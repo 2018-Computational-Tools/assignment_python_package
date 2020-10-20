@@ -36,6 +36,7 @@
 - install `pytest` with `conda install -c anaconda pytest`
 - to run a specific test file, you can call e.g. `pytest tests/test_library.py` from the terminal - take a look at the `tests/test_library.py` file to see what it checks
 - to run doctests on a code file you can call e.g. `pytest src/awesome/module.py --doctest-modules`
+- to run all tests and doctests for your entire library simply run `pytest --doctest-modules` (i.e. without specifying a specific folder or file)
 - to run all your tests and doctests automatically in **multiple virtual environments** to ensure your library works outside your current workspace and in multiple python versions (e.g. python 2.7 and python 3.7), install `conda install -c conda-forge tox` and call `tox` from the terminal
 - to run all tests for just one specific version, use e.g. `tox -e py37` - take a look at the `tox.ini` to see how it is setup and use `tox -l` to find the list of available testing environments
 
@@ -82,7 +83,7 @@
 
 - for wider distribution it is useful to upload your library to the [Python Package Index (PyPI)](https://pypi.org/) at which point it will become available to your users via regular `pip` install:
     ```bash
-    pip install PGKNAME
+    pip install LIBNAME
     ```
 
 - if you have already settled on a name for your library (it must be unique on PyPI!), it is worthwhile registering the name with PyPI using the following command from your main library directory (you'll need a PyPI account first and then user your login credentials):
