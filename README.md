@@ -4,9 +4,10 @@
 
  - clone this repository to your desktop
  - open it in your favorite python code editor (e.g. atom or spyder)
-  - [for atom](https://atom.io/), we recommend installing the package plugins:
-  - **`atom-ide-terminal`**: let's you start a terminal from menu `Packages` -> `Atom IDE Terminal` -> `Toggle`
-  - **`ide-python`**: provides python programming tools including color-coding for `.py` files
+  - [for atom](https://atom.io/), we recommend installing the package plugins (from the command line):
+  - **`apm install atom-ide-terminal`**: let's you start a terminal from menu `Packages` -> `Atom IDE Terminal` -> `Toggle`
+  - **`apm install ide-python`**: provides python programming tools including color-coding for `.py` files
+  - then launch atom in the current directory from the command line with `atom .`
 
 ## Using the library
 
