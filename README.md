@@ -7,7 +7,7 @@
    - [for atom](https://atom.io/), we recommend installing the package plugins (from the command line):
    - **`apm install atom-ide-terminal`**: let's you start a terminal from menu `Packages` -> `Atom IDE Terminal` -> `Toggle`
    - **`apm install ide-python`**: provides python programming tools including color-coding for `.py` files
-   - then launch atom in the current directory from the command line with `atom .`
+   - then launch atom in the current directory from the command line with **`atom .`**
 
 ## Using the library
 
